@@ -1,0 +1,24 @@
+{
+  "name": "renat",
+  "version": "0.1.0",
+  "description": "A best effort, syntax-first, types-last, JavaScript to Reason translator",
+  "license": "MIT",
+  "esy": {
+    "build": "refmterr dune build -p #{self.name}"
+  },
+  "scripts": {
+    "test": "esy x Test.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@reason-native/rely": "*",
+    "@fastpack/flow_parser": "0.81.0",
+    "@esy-ocaml/reason": ">= 3.4.0 < 3.5.0",
+    "refmterr": "*",
+    "ocaml": "~4.6.0"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": "~4.6.0"
+  }
+}
